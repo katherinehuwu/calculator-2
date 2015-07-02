@@ -19,3 +19,8 @@ while first_input != "q":
     elif math_dtl[0] == "+":
         answer = add(int(math_dtl[1]), int(math_dtl[2]))
         print answer
+
+    elif math_dtl[0] == "-":
+        answer = subtract(int(math_dtl[1]), int(math_dtl[2]))
+        print answer
+
