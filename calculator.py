@@ -35,6 +35,9 @@ while first_input != "q":
     elif math_dtl[0] == "cube":
         answer = cube(int(math_dtl[1])) 
 
+    elif math_dtl[0] == "pow":
+        answer = power(int(math_dtl[1]), int(math_dtl[2]))    
+
     if answer != None:
         print answer
 
