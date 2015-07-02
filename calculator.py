@@ -7,9 +7,7 @@ calculator program yourself in this file.
 
 from arithmetic import *
 
-first_input = None
-
-while first_input != "q":
+while True:
     user_input = raw_input("Please enter prefix notation math problem: ")
     math_dtl = user_input.split(" ")
     answer = None
@@ -37,7 +35,12 @@ while first_input != "q":
 
     elif math_dtl[0] == "pow":
         answer = power(int(math_dtl[1]), int(math_dtl[2]))    
+    
+    elif math_dtl[0] == "mod":
+        answer = mod(int(math_dtl[1]), int(math_dtl[2]))   
 
-    if answer != None:
-        print answer
+    else:
+        answer = "I don't understand."
+
+    print answer
 
