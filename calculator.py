@@ -32,6 +32,9 @@ while first_input != "q":
     elif math_dtl[0] == "square":
         answer = square(int(math_dtl[1]))   
 
+    elif math_dtl[0] == "cube":
+        answer = cube(int(math_dtl[1])) 
+
     if answer != None:
         print answer
 
